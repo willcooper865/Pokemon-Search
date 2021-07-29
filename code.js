@@ -38,3 +38,4 @@ searchButton.addEventListener("click", () => {
         })
 })
 // DMG Kenzie Academy 7-29-21
+// pokemon imgages: pokeapi.co -- https://sabrinapunjani.files.wordpress.com/2013/10/pokelogo.gif
