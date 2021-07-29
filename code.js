@@ -19,6 +19,23 @@ console.log("2. second")
 
 
 // fetch data from api
-fetch('https://pokeapi.co/api/v2/pokemon/eevee')
-  .then(response => response.json())
-  .then(data => console.log(data));
+let mainElement = document.querySelector("main")
+let searchTextbox = document.querySelector("#search-text")
+let searchButton = document.querySelector("#search")
+
+searchButton.addEventListener("click", () => {
+    let searchTerm = searchTextbox.value
+
+
+// fetch pokemon default img from api up to gen 6
+    fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
+        .then(response => response.json())
+        .then(pokemon => {
+            console.log(pokemon)
+        
+            let imgElement = document.createElement("img")
+            imgElement.src = pokemon.sprites.front_default
+
+            mainElement.append(imgElement)
+        })
+})
