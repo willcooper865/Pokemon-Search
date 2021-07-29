@@ -23,7 +23,7 @@ let searchTextbox = document.querySelector("#search-text")
 let searchButton = document.querySelector("#search")
 
 searchButton.addEventListener("click", () => {
-    let searchTerm = searchTextbox.value
+    let searchTerm = searchTextbox.value.toLowerCase()
 
     // fetch pokemon default img from api up to gen 6
     fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
