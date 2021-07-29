@@ -7,7 +7,6 @@
 "asynchronous code means code which does not execute in sequence"
 // "A-" means "not"
 
-
 console.log("1. first")
 setTimeout(() => console.log("7. seventh"), 5000)
 setTimeout(() => console.log("3. third"), 0)
@@ -17,7 +16,6 @@ setTimeout(() => console.log("5. fifth"), 0)
 setTimeout(() => console.log("6. sixth"), 1000)
 console.log("2. second")
 
-
 // fetch data from api
 let mainElement = document.querySelector("main")
 let searchTextbox = document.querySelector("#search-text")
@@ -26,8 +24,7 @@ let searchButton = document.querySelector("#search")
 searchButton.addEventListener("click", () => {
     let searchTerm = searchTextbox.value
 
-
-// fetch pokemon default img from api up to gen 6
+    // fetch pokemon default img from api up to gen 6
     fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
         .then(response => response.json())
         .then(pokemon => {
