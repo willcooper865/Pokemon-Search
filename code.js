@@ -1,3 +1,4 @@
+// intro into asychronous programming and fetch from an api
 // Synchronous code
 "synchronous code means code which executes in sequence"
 // "sync": together, aligned, sequential, matched up, step-by-step, harmony, accord
