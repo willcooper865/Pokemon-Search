@@ -12,7 +12,7 @@ console.log("1. first")
 setTimeout(() => console.log("7. seventh"), 5000)
 setTimeout(() => console.log("3. third"), 0)
 setTimeout(() => console.log("4. fourth"), 0)
-setInterval(() => {}, 0) // async code this is non-blocking. this is an ifinite loop which DOESN'T block other things from happening.
+setInterval(() => {}, 0) // async code this is non-blocking. this is an infinite loop which DOESN'T block other things from happening.
 setTimeout(() => console.log("5. fifth"), 0)
 setTimeout(() => console.log("6. sixth"), 1000)
 console.log("2. second")
