@@ -1,11 +1,11 @@
-// Intro to asynchronous programming and fetch from an api
+// Intro to asynchronous programming and fetch() from an api
 // Synchronous code
 "synchronous code means code which executes in sequence"
 // "sync": together, aligned, sequential, matched up, step-by-step, harmony, accord
 // "chrono": time
 
 // Asynchronous code
-"asynchronous code means code which does not execute in sequence"
+"asynchronous code means code which does NOT execute in sequence"
 // "A-" means "not"
 
 console.log("1. first")
@@ -27,15 +27,15 @@ searchButton.addEventListener("click", () => {
 
     // fetch pokemon default img from api up to gen 6
     fetch(`https://pokeapi.co/api/v2/pokemon/${searchTerm}`)
-        .then(response => response.json())
-        .then(pokemon => {
-            console.log(pokemon)
+    .then(response => response.json())
+    .then(pokemon => {
+        console.log(pokemon)
         
-            let imgElement = document.createElement("img")
-            imgElement.src = pokemon.sprites.front_default
+        let imgElement = document.createElement("img")
+        imgElement.src = pokemon.sprites.front_default
 
-            mainElement.append(imgElement)
-        })
+        mainElement.append(imgElement)
+    })
 })
 // DMG Kenzie Academy 7-29-21
 // pokemon imgages: pokeapi.co -- https://sabrinapunjani.files.wordpress.com/2013/10/pokelogo.gif
