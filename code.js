@@ -37,3 +37,4 @@ searchButton.addEventListener("click", () => {
             mainElement.append(imgElement)
         })
 })
+// DMG Kenzie Academy 7-29-21
